@@ -1,0 +1,10 @@
+<?php include 'includes/config.php'?>
+<?php get_header()?>
+
+I am barack obama, president of the united states - ama I took a few shots at lake louise today and google offered me this panorama Sitting on the couch with a headache and an ice pack on my head when my girlfriend tells me not to move A bird flew in my window, sht on my laptop, and decided to die right in front of me. how's your day going? She took me in 15 years ago and no one makes me as happy. we had the best xmas. i love my granma so much. As a teen in the 80s, my conservative god-fearing family wouldn't let me own dungeons & dragons. thirty years later, my son and i are starting our d & d journey. 
+<br><br>
+Shoutout to the 13-year-old on a skateboard who called me a “candy corn bitch” Is it just me, or is tom cruise beginning to look like a middle aged lesbian? Let me show you a trick I just want someone who looks at me the way gal gadot shamefully remembers she's married. Ea deleted my origin account and ea help is totally ignoring me. My landlord was replacing our sink and sent me this. "leave the internet and come play with me." This is my uber driver beni, he took me to the hospital and keeping me company since most of my family lives out of the state. 
+<br><br>
+If i get 100 upvotes, i'll buy everyone who upvotes a copy of sun and moon Me as the official obiwan kenboni This definitely caught me off guard. Someone just hit & run me and the guy’s front bumper got ripped off with his license plate still attached. see ya soon. Til when the nazis burned sigmund freud's books he said, "what progress we are making. in the middle ages they would have burned me. now, they are content with burning my books." My boss told me i had too many things in my hands and i was going to drop something, so he threw more at me. An old team at reddit
+    
+<?php get_footer()?>
