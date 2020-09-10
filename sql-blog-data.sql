@@ -1,3 +1,8 @@
+drop database if exists blog_db;
+create database blog_db;
+
+use blog_db;
+
 drop table if exists blogs;
 
 create table blogs (
@@ -48,7 +53,7 @@ Operation angular momentum mk1 was somewhat successful. Angular walls and corner
 Coming back to frontend after 10 days off Researchers have created a chip for the nano-manipulation of light, paving the way for next gen optical technologies and enabling deeper understanding of black holes.they designed an integrated nanophotonic chip that can achieve unparalleled levels of control over the angular momentum of light."),
 	
 
-	(NULL,"Bootstrap 4 released Version 0.16.0","bootstrap.jpg","Webdev reddit for web developers Web design Mrw i've pulled myself up by my bootstraps to become the best person in the world at my job and now regularly engage in private charity to help others do the same so they don't have to rely on the government and wakeup to see that the conservative president has mocked me on twitter But we have to pull ourselves up by the bootstraps right? I am the morninghead guy. in the last year after shark tank, i helped my buddy start a company that's now processing over $350 million/yr. tell us your idea and we'll tell you how to grow it with zero cash like my last ama, we'll answer every single question today. aua. Bootstraps, vital organs, it's all the same. 
+	(NULL,"Bootstrap 4 released","bootstrap.jpg","Webdev reddit for web developers Web design Mrw i've pulled myself up by my bootstraps to become the best person in the world at my job and now regularly engage in private charity to help others do the same so they don't have to rely on the government and wakeup to see that the conservative president has mocked me on twitter But we have to pull ourselves up by the bootstraps right? I am the morninghead guy. in the last year after shark tank, i helped my buddy start a company that's now processing over $350 million/yr. tell us your idea and we'll tell you how to grow it with zero cash like my last ama, we'll answer every single question today. aua. Bootstraps, vital organs, it's all the same. 
 <br><br>
 Til the phrase \"pull yourself up by your own bootstraps\" was originally meant to describe an absurdly impossible action. the phrase is an adynation, a figure of speech in the form of hyperbole taken to such extreme lengths as to insinuate a complete impossibility. I'm a former us navy seal, staunch libertarian, with an empty bank account, who just made the first campaign contribution of my life to, of all people, a socialist democrat. Homework time. warm up the weaponized autism cannons. Bootstrap 4 released Version 0.16.0 Dear millennials stop complaining and lift yourself by your bootstraps Imagine the sandbox from the perspective of the enemy Til \"pulling yourself up by your bootstraps\" originally meant attempting something ludicrous or impossible 
 <br><br>
@@ -102,7 +107,7 @@ Volume 6 trailer. Steve the mad lad with naming conventions The great british ba
 Rwby volume 6 sneak peek who needs bodyguards? ign Giveqrowabreak2k18"),
 
 
-	(NULL,"JavaScript jokes so bad you have to facepalm","javascript.gif","Webdev reddit for web developers Coding Are you aware? comcast is injecting 400+ lines of javascript into web pages. Old meme format, timeless javascript quirks I'd rather javascript Well, javascript 
+	(NULL,"JavaScript factories","javascript.gif","Webdev reddit for web developers Coding Are you aware? comcast is injecting 400+ lines of javascript into web pages. Old meme format, timeless javascript quirks I'd rather javascript Well, javascript 
 <br><br>
 We build internet explorer. i know, right? ask us just about anything. Til there's a community called \"dwitter\" where people compose 140 character javascript programs that produce interesting visuals Javascript dreams A wizard appears and offers you mastery in a skill of your choice. you will be given 10 years worth of practice and experience for that skill in an instant. which skill would you choose? Lpt how to get the most out of google/search enginesboolean searches & additional tricks - long post, but have always found it very useful for general & specific searches Javascript is getting real tired of your jokes After 6 months of warning users, we finally did it. tonight, i denied 2,400 windows 7 computers from log on. You learn every day, with javascript. 
 <br><br>
@@ -129,7 +134,7 @@ I'm not allowed a dog, so my neighbors built a window into my yard so i can pet 
 Canola field in idaho looks just like the iconic windows wallpaper. This sunset looked split in half through my two windows"),
 
 
-	(NULL,"Why I really miss my MacBook Pro","macbook.jpg","Applehelp Pc master race - spearheading the second golden age of pc gaming Apple used ice to seize louis rossmann's shipment of original macbook batteries [super awesome update] sat down on my friend's macbook and broke it, offered to pay her the money for it but now she wants more because \"she was upgrading anyway\" so it's this or she will sue me in small claims court. I just won a macbook air for $1.00 Tifu by almost murdering my friend and stopping a school-wide arms race. 
+	(NULL,"Why I really miss my MacBook Pro, not really!","macbook.jpg","Applehelp Pc master race - spearheading the second golden age of pc gaming Apple used ice to seize louis rossmann's shipment of original macbook batteries [super awesome update] sat down on my friend's macbook and broke it, offered to pay her the money for it but now she wants more because \"she was upgrading anyway\" so it's this or she will sue me in small claims court. I just won a macbook air for $1.00 Tifu by almost murdering my friend and stopping a school-wide arms race. 
 <br><br>
 Apple's holier-than-thou attitude is their undoing in court Apple is suing a man that teaches people to repair their macbooks [original working link] Apple fans are returning their new macbook pros that cost a minimum of $2,800 because they can't reach the advertised speeds Apple's newest macbook pro is the first macbook not recommended by consumer reports Apple fans are returning their new macbook pros that cost a minimum of $2,800 because they can't reach the advertised speeds Apple's new proprietary software locks kill independent repair on new macbook pros - failure to run apple's proprietary diagnostic software after a repair \"will result in an inoperative system and an incomplete repair.\" To those saying the new macbook touchbar is useless Til that a high school in pennsylvania issued a macbook to each of its 2,306 students, then remotely activated the webcams to spy on the students at home. 
 <br><br>
@@ -147,7 +152,7 @@ The semicolon is probably now used more often in winky faces than its actual gra
 This is what a semicolon looks like in russian If i get too excited while on my period, does it turn into an exclamation point?"),
 
 
-	(NULL,"Why a Software Developer is not a Software Engineer","engineer.jpg","Software development - methodologies, techniques, and tools. covering agile, rup, waterfall + more. Cs career questions What free software is so good you can't believe it's free? R/softwaregore What free software is so good you can't believe it's available for free? Sites with 100% verified / virus-free software? 
+	(NULL,"Why a Software Developer is not a Computer Scientist","engineer.jpg","Software development - methodologies, techniques, and tools. covering agile, rup, waterfall + more. Cs career questions What free software is so good you can't believe it's free? R/softwaregore What free software is so good you can't believe it's available for free? Sites with 100% verified / virus-free software? 
 <br><br>
 [software][crack] youtubetoclick installer + crack dll. Faq call 5 \"what screenwriting software should i use\" [give us the best response to the question in the comments][upvote the best answer - it’ll then be used in the revamped faq] Cracked office works just like the real thing, from r/iamverysmart [software] all adobe applications [windows][mac] - 2018 update What software should everyone have installed on their computer? Not being accepted in major wanted It's official ibm is acquiring software company red hat for $34 billion Youtube | nintendo switch download software | games 
 <br><br>

@@ -1,0 +1,32 @@
+# Turn mod_rewrite on
+
+RewriteEngine on
+
+RewriteRule ^template-sql template-sql.php [NC,L]
+RewriteRule ^about about.php [NC,L]
+
+
+RewriteRule ^daily/([a-zA-Z0-9\-=&_&\.\,\)\(]*)$ daily.php?day=$1 [NC,L]
+RewriteRule ^daily daily.php [NC,L]
+
+RewriteRule ^request request.php [NC,L]
+RewriteRule ^contact contact.php [NC,L]
+
+RewriteRule ^blogs blogs.php [NC,L]
+RewriteRule ^blog/([a-zA-Z0-9\-=&_&\.\,\)\(]*)$ blog.php?id=$1 [NC,L]
+
+
+#bad request
+ErrorDocument 400 /400.php
+
+#unauthorized
+ErrorDocument 401 /401.php
+
+#forbidden
+ErrorDocument 403 /403.php
+
+#not found
+ErrorDocument 404 /404.php
+
+#internal server error
+ErrorDocument 500 /500.php

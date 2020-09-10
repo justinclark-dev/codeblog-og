@@ -20,39 +20,15 @@
     <!-- Custom styles for this template -->
     <link href="<?=$config->theme_virtual?>css/business-casual.css" rel="stylesheet">
     <?=$config->loadhead?>
-
-
-<style>
-      #mainNav .navbar-nav>li.nav-item>a.active {
-        background: #000;
-        color:#fff;
-        opacity: .5;
-        height:100%;
-      }
-      #mainNav .navbar-nav>li.nav-item>a:hover {
-        background: #333;
-        color:#fff;
-        opacity: .5;
-        height:100%;
-      }
-</style>
   </head>
 
   <body>
 
-    <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block">
-
-      <?=$config->siteName?>
-
-    </div>
-    <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block">
-
-      <strong><?=$config->slogan?></strong>
-
-    </div>
+    <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block"><?=$config->banner?></div>
+    <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
       <div class="container">
         <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,20 +36,30 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav mx-auto">
-
-
-<!--?=makeLinks($navMain);?-->
-
-                <?=bc_links($config->navMain)?>
-
-
-
+                <?=bc_links($config->nav1)?>
+            <!--     
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.php">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="customers.php">Customers</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="appointment.php">Appointment</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="contact.php">Contact</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="daily.php">Daily</a>
+            </li> 
+            -->
           </ul>
         </div>
       </div>
     </nav>
-
-<?=$config->bannerAd?>
 
     <div class="container">
         <div class="bg-faded p-4 my-4">
@@ -92,35 +78,27 @@ function bc_links($nav1){
     $myReturn = '';
     foreach($nav1 as $url => $text){
         
-        //$url = $config->virtual_path . $url; //add virtual path
+        $url = $config->virtual_path . $url; //add virtual path
         if(THIS_PAGE == $url)
         {//current page - add highlight
               $myReturn .= '
             <li class="nav-item active px-lg-4">
-                <a class="nav-link text-uppercase text-expanded active" href="' . $url . '">' . $text . '</a>
+                <a class="nav-link text-uppercase text-expanded" href="' . $url . '">' . $text . '</a>
             </li>
             '; 
         }else{//no highlight
-
-
-
              $myReturn .= '
             <li class="nav-item px-lg-4">
                 <a class="nav-link text-uppercase text-expanded" href="' . $url . '">' . $text . '</a>
             </li>
             '; 
         }
-
-
-
-
     }
     
     return $myReturn;
 
 }//end bc_links()
-         
-   
+            
 ?>
         
         

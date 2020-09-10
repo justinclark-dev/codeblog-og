@@ -1,15 +1,8 @@
 <?php
 
-$config->sideAds[] = 'img/ads/300x600/acumatica.png';
-$config->sideAds[] = 'img/ads/300x600/dynatrace.png';
-$config->sideAds[] = 'img/ads/300x600/freshdesk.png';
-$config->sideAds[] = 'img/ads/300x600/infusionsoft.png';
-$config->sideAds[] = 'img/ads/300x600/infusionsoft2.png';
-$config->sideAds[] = 'img/ads/300x600/nerdwallet.png';
-$config->sideAds[] = 'img/ads/300x600/tableau.jpg';
-$config->sideAds[] = 'img/ads/300x600/tableau.png';
-$config->sideAds[] = 'img/ads/300x600/tableau2.png';
-$config->sideAds[] = 'img/ads/300x600/workato.jpg';
+$sideAds[] = 'img/ads/300x600/ad1.png';
+$sideAds[] = 'img/ads/300x600/ad2.png';
+$sideAds[] = 'img/ads/300x600/ad3.png';
 
 function randomize ($arr) {
 	if(is_array($arr)) {//Generate random item from array and return it
@@ -19,13 +12,9 @@ function randomize ($arr) {
 	}
 }#end randomize()
 
-$config->bannerAds[] = 'img/ads/banner/algolia.png';
-$config->bannerAds[] = 'img/ads/banner/alltech.png';
-$config->bannerAds[] = 'img/ads/banner/alltech2.png';
-$config->bannerAds[] = 'img/ads/banner/lowermybills.png';
-$config->bannerAds[] = 'img/ads/banner/quickenloans.png';
-$config->bannerAds[] = 'img/ads/banner/regence.jpg';
-$config->bannerAds[] = 'img/ads/banner/shift.png';
+$bannerAds[] = 'img/ads/banner/ad1.png';
+$bannerAds[] = 'img/ads/banner/ad2.png';
+$bannerAds[] = 'img/ads/banner/ad3.png';
 
 function rotate ($arr) {
 	if(is_array($arr)) {//Generate item in array using date and modulus of count of the array

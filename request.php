@@ -1,5 +1,5 @@
-<?php include 'includes/config.php'?>
-<?php get_header()?>
+<?php include 'config.php'?>
+<?php include 'header.php'?>  
 
           <p>Want to request a blog entry? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
           <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
@@ -27,10 +27,10 @@ if(isset($_POST['name'])) {
 
   $today = date('m/d/Y H:i');  
 
-  $to = 'justin.clark.mba@gmail.com';
+  $to = EMAIL;
   $subject = 'Code Contact Page, sent: ' . $today;
   $message = process_post();
-  $replyTo = 'clarj132@northseattle.edu';
+  $replyTo = 'no-reply';
 
   sendEmail($to, $subject, $message, $replyTo);
 
@@ -92,7 +92,7 @@ if(isset($_POST['name'])) {
 
 ?>
 
-<?php get_footer();
+<?php include 'footer.php';
 
 function process_post() {
   $myReturn = '';

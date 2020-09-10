@@ -1,8 +1,8 @@
-<?php include 'includes/config.php'?>
-<?php get_header()?>
+<?php include 'config.php'?>
+<?php include 'header.php'; ?>
 
           <div class="post-preview">
-            <a href="blog.php?id=15">
+            <a href="blog/15">
               <h2 class="post-title">
                 Every programmer's worst nightmare
               </h2>
@@ -36,7 +36,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         echo '
           <div class="post-preview">
-            <a href="blog.php?id=' . $row['BlogID'] . '">
+            <a href="blog/' . $row['BlogID'] . '">
               <h2 class="post-title">' .
                 $row['BlogTitle']
               . '</h2>
@@ -58,7 +58,7 @@ $conn->close();
 ?>
           <!-- Pager -->
           <div class="clearfix">
-            <a class="btn btn-primary float-right" href="blogs.php">All Posts &rarr;</a>
+            <a class="btn btn-primary float-right" href="blogs/">All Posts &rarr;</a>
           </div>
 
-<?php get_footer() ?>
+<?php include 'footer.php'; ?>

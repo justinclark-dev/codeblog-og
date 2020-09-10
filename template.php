@@ -1,6 +1,6 @@
-<?php include 'includes/config.php'?>
-<?php get_header()?>
+<?php include 'config.php'?>
+<?php include 'header.php'?>
 
 <p>Page content goes here.</p>
 
-<?php get_footer()?>
+<?php include 'footer.php'?>

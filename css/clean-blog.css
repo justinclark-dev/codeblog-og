@@ -418,3 +418,26 @@ footer .copyright {
   font-size: 16px;
   padding: 25px 35px;
 }
+
+.error-page{
+  margin-bottom:4em;
+}
+
+.error-page *{
+  text-align:center;
+}
+
+.error-page h2{
+  font-size:10em;
+}
+
+.error-page h3{
+  font-size:2.2em;
+}
+
+.error-page .btn-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:2em;
+}

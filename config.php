@@ -6,10 +6,11 @@ ob_start();//prevent header errors
 include 'debug.php';
 require_once('db_connection.php');
 require_once('db_functions.php');
+require_once('email.config.php');
 
 $db = db_connect();
 
-include 'ads.php';
+// include 'ads.php';
 define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
 
 //default page values
@@ -25,20 +26,15 @@ $sideAd = '';
 $displayAds = FALSE;
 
 //array for main navigation links
-$navMain['index.php'] = 'Home';
-$navMain['template-sql.php'] = 'Database Test';
-$navMain['about.php'] = 'About';
-$navMain['daily.php'] = 'Daily';
-$navMain['blogs.php'] = 'Blogs';
-$navMain['request.php'] = 'Request Blog';
-$navMain['contact.php'] = 'Contact';
+$navMain['/'] = 'Home';
+// $navMain['/template-sql'] = 'Database Test';
+$navMain['/about'] = 'About';
+$navMain['/daily'] = 'Daily';
+$navMain['/blogs'] = 'Blogs';
+$navMain['/request'] = 'Request Blog';
+$navMain['/contact'] = 'Contact';
 
 switch(THIS_PAGE){
-  case '500.php';
-    $title = 'Internal Server Error';
-    $heading = '';
-    $subheading = '';
-    break;
   case 'template.php';
     $title = 'My template page';
     $heading = 'Template File';
@@ -53,7 +49,7 @@ switch(THIS_PAGE){
     $title = 'Home page';
     $heading = 'Home';
     $subheading = 'There\'s no place like home';
-    $displayAds = TRUE;
+    $displayAds = FALSE;
     break;
   case 'daily.php';
     $title = 'Daily Blog';
@@ -77,12 +73,12 @@ switch(THIS_PAGE){
     break;
   case 'blog.php';
     $title = 'Blog Entry';
-    $displayAds = TRUE;
+    $displayAds = FALSE;
     //not using $heading and $subheading on this page
     break;
   case 'blogs.php';
     $title = 'Blogs List';
-    $displayAds = TRUE;
+    $displayAds = FALSE;
     //not using $heading and $subheading on this page
     break;
 }
@@ -111,32 +107,32 @@ function makeLinks($nav) {
   return $navigation;
 }
 
-if ($displayAds == TRUE) {
-    $bannerAdRandomizer = randomize($sideAds);
-    $sideAdRotater = rotate($bannerAds);
-    $sideAd = '
-        <div class="col-lg-4 col-md-2 sidebar-offcanvas" id="sidebar">
-          <div class="list-group">
-              <img src="' . $bannerAdRandomizer . '"
-                style="width:300px;">
-          </div>
-        </div><!--/sidebar-->
-    ';
-    $bannerAd = '
-        <div class="container">
-          <div class="row">
-            <div style="margin:0 auto;">
-              <img src="' . $sideAdRotater . '" 
-                style="
-                  margin-top:-330px;
-                  z-index: 100; 
-                  width: 600px;
-                  position: relative; 
-                  background: #fff;" >
-            </div>
-          </div>  
-        </div>
-    ';
-}
+// if ($displayAds == TRUE) {
+//     $bannerAdRandomizer = randomize($sideAds);
+//     $sideAdRotater = rotate($bannerAds);
+//     $sideAd = '
+//         <div class="col-lg-4 col-md-2 sidebar-offcanvas" id="sidebar">
+//           <div class="list-group">
+//               <img src="' . $bannerAdRandomizer . '"
+//                 style="width:300px;">
+//           </div>
+//         </div><!--/sidebar-->
+//     ';
+//     $bannerAd = '
+//         <div class="container">
+//           <div class="row">
+//             <div style="margin:0 auto;">
+//               <img src="' . $sideAdRotater . '" 
+//                 style="
+//                   margin-top:-330px;
+//                   z-index: 100; 
+//                   width: 600px;
+//                   position: relative; 
+//                   background: #fff;" >
+//             </div>
+//           </div>  
+//         </div>
+//     ';
+// }
 
 ?>

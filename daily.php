@@ -1,64 +1,66 @@
-<?php include 'includes/config.php'?>
-
+<?php include 'config.php'?>
+<?php include 'header.php'?>
 <?php
 
 /*
-1)if day is passed via GET, show $day's coffee
-2)if it's today, shows $today's coffee
-3)place a link to show today's coffee (if on another day)
+1)if day is passed via GET, show $day's blog
+2)if it's today, shows $today's blog
+3)place a link to show today's blog (if on another day)
 */
 
 if(isset($_GET['day'])) {
-  //if day is passed via GET, show $day's coffee
+  //if day is passed via GET, show $day's blog
   $today = $_GET['day'];
 }else{
-  //if it's today, shows $today's coffee
-  $today = date('l');
+  //if it's today, shows $today's blog
+  $today = lcfirst(date('l'));
 }
 
 switch ($today) {
-  case 'Sunday';
+  case 'sunday';
     $category = 'PHP';
     $img = 'php';
     break;
-  case 'Monday';
+  case 'monday';
     $category = 'Angular';
     $img = 'angular';
     break;
-  case 'Tuesday';
+  case 'tuesday';
     $category = 'Linux';
     $img = 'linux';
     break;
-  case 'Wednesday';
+  case 'wednesday';
     $category = 'JavaScript';
     $img = 'js';
     break;
-  case 'Thursday';
+  case 'thursday';
     $category = 'Python';
     $img = 'python';
     break;
-  case 'Friday';
+  case 'friday';
     $category = 'Java';
     $img = 'java';
     break;
-  case 'Saturday';
+  case 'saturday';
     $category = 'Node.js';
     $img = 'node';
     break;
 }
-
 ?>
-<?php get_header()?>
+
+
+
 <style>i.daily-icon{font-size:300px;}</style>
-<p><?=$today?>'s blog category is: <?=$category?></p>
+<p><?=ucfirst($today)?>'s blog category is: <?=$category?></p>
 <p><i class="fab fa-<?=$img?> daily-icon"></i></p>
 <p>Click below to find other daily blog categories:</p>
-<ul class="links"><li><a href="daily.php?day=Sunday">Sunday</a></li>
-<li><a href="daily.php?day=Monday">Monday</a></li>
-<li><a href="daily.php?day=Tuesday">Tuesday</a></li>
-<li><a href="daily.php?day=Wednesday">Wednesday</a></li>
-<li><a href="daily.php?day=Thursday">Thursday</a></li>
-<li><a href="daily.php?day=Friday">Friday</a></li>
-<li><a href="daily.php?day=Saturday">Saturday</a></li></ul>
 
-<?php get_footer()?>
+<ul class="links"><li><a href="/daily/sunday">Sunday</a></li>
+<li><a href="/daily/monday">Monday</a></li>
+<li><a href="/daily/tuesday">Tuesday</a></li>
+<li><a href="/daily/wednesday">Wednesday</a></li>
+<li><a href="/daily/thursday">Thursday</a></li>
+<li><a href="/daily/friday">Friday</a></li>
+<li><a href="/daily/saturday">Saturday</a></li></ul>
+
+<?php include 'footer.php'?>

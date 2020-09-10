@@ -1,10 +1,7 @@
 <?php
 //common.php - stores our favorite functions
 
-/*
-handles database and other errors
-
-*/
+/* handles database and other errors */
 function myerror($myFile, $myLine, $errorMsg)
 {
     if(defined('DEBUG') && DEBUG)
@@ -13,16 +10,12 @@ function myerror($myFile, $myLine, $errorMsg)
        echo "Error Message: <b>" . $errorMsg . "</b><br />";
        die();
     }else{
-	
-       header("Location: " . "https://clark.mba/itc240/codeblog/500.php");
-       //die();
+		echo "I'm sorry, we have encountered an error.  Would you like to buy some socks?";
+		die();
     }
 }
 
-/*
- loads header include file from theme folder 
-
-*/
+/* loads header include file from theme folder */
 
 function get_header($file=''){
     global $config;
@@ -35,7 +28,6 @@ function get_header($file=''){
         }else{
             $file = 'footer.php';
         }
-           
     }
     
     $file = $config->physical_path . 'themes/' . $config->theme . '/' . $file;
@@ -45,7 +37,6 @@ function get_header($file=''){
     }else{
         myerror(__FILE__,__LINE__,'include file not found: ' . $file);
     }
-    
     
 }#end get_header()
 

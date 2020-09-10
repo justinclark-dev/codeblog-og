@@ -1,0 +1,19 @@
+# dependencies
+/node_modules
+
+database.config.php
+database(safe).config
+db_credentials.php
+
+error_log
+
+email.config.php
+
+recaptcha.php
+
+
+/include/contact_include.php
+/include/recaptchalib.php
+/include/util.js
+
+

@@ -1,5 +1,5 @@
-<?php include 'includes/config.php'?>
-<?php get_header()?>
+<?php include 'config.php'?>
+<?php include 'header.php'; ?>
 <?php 
 
 /*
@@ -32,10 +32,10 @@ if ($conn->connect_error) {
 echo '
   <style>i.blog-nav {font-size:50px;color:white;}</style>
 
-  <a href="blog.php?id=' . $previous . '">
+  <a href="/blog/' . $previous . '">
     <i class="far fa-hand-point-left float-left blog-nav" style="margin: 0 40px;"></i>
   </a>
-  <a href="blog.php?id=' . $next . '">
+  <a href="/blog/' . $next . '">
     <i class="far fa-hand-point-right float-right blog-nav" style="margin: 0 40px;"></i>
   </a>
   <div class="clear"></div>
@@ -49,7 +49,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         echo '
           <h2 class="post-title">' . $row['BlogTitle']. '</h2>
-          <p><img src="img/blogs/' . $row['BlogImg']. '" width="700px"></p>
+          <p><img src="../img/blogs/' . $row['BlogImg']. '" width="700px"></p>
           <p>' . $row['BlogEntry']. '</p>
         ';
     }
@@ -59,14 +59,14 @@ if ($result->num_rows > 0) {
 $conn->close();
 
 echo '
-  <a href="blog.php?id=' . $previous . '">
+  <a href="blog/' . $previous . '">
     <i class="far fa-hand-point-left float-left blog-nav" style="margin: 0 40px;"></i>
   </a>
-  <a href="blog.php?id=' . $next . '">
+  <a href="blog/' . $next . '">
     <i class="far fa-hand-point-right float-right blog-nav" style="margin: 0 40px;"></i>
   </a>
   <div class="clear"></div>
 ';
 
 ?>
-<?php get_footer() ?>
+<?php include 'footer.php'; ?>

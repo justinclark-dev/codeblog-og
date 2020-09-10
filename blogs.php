@@ -1,5 +1,5 @@
-<?php include 'includes/config.php'; ?>
-<?php get_header(); ?>
+<?php include 'config.php'?>
+<?php include 'header.php'; ?>
 <?php 
 
 /*
@@ -21,7 +21,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         echo '
           <div class="post-preview">
-            <a href="blog.php?id=' . $row['BlogID'] . '">
+            <a href="./blog/' . $row['BlogID'] . '">
               <h2 class="post-title">' .
                 $row['BlogTitle']
               . '</h2>
@@ -45,4 +45,4 @@ echo '
 ';
 
 ?>
-<?php get_footer(); ?>
+<?php include 'footer.php'; ?>

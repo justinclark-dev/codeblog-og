@@ -1,5 +1,4 @@
-<?php include 'includes/config.php'?>
-
+<?php include 'config.php'?>
 <?php  //db_test.php
 
   
